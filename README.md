@@ -1,0 +1,1 @@
+# lindar-bingo-app
