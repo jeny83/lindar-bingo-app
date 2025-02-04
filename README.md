@@ -16,27 +16,13 @@ This application generates Bingo 90 tickets in strips of six tickets. A full str
 - High-performance implementation capable of generating 10,000 strips in under 1 second.
 - Extensive unit tests to validate correctness and performance.
 
-## How to Run
+## Performance Benchmark
 
-### Prerequisites
-
-- Java 21
-- Maven
-
-### Build and Run
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/jeny83/lindar-bingo-app.git
-   ```
-2. Build the project:
-   ```sh
-   mvn clean install
-   ```
-3. Run the application:
-   ```sh
-   mvn exec:java -Dexec.mainClass="com.lindar.Main"
-   ```
+Based on test results, the execution time for generating 10,000 Bingo strips was:
+ ```sh
+00:28:32.119 [main] INFO com.lindar.Main -- Time taken to generate 10,000 Bingo Strips: 380 ms
+```
+This confirms the high efficiency of the implementation.
 
 ## Algorithm Explanation
 
@@ -65,6 +51,30 @@ This project includes a comprehensive test suite using JUnit 5. Tests include:
 - **No Duplicates**: Ensures all numbers 1-90 appear exactly once in a strip.
 - **Row Composition**: Checks that each row contains exactly 5 numbers and 4 blank spaces.
 - **Performance Tests**: Confirms that 10,000 strips can be generated in under 1 second.
+
+## How to Run
+
+### Prerequisites
+
+- Java 21
+- Maven
+
+### Build and Run
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/jeny83/lindar-bingo-app.git
+   ```
+2. Build the project:
+   ```sh
+   mvn clean install
+   ```
+3. Run the application:
+   ```sh
+   mvn exec:java -Dexec.mainClass="com.lindar.Main"
+   ```
+
+
 
 To run the tests:
 
