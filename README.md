@@ -20,7 +20,7 @@ This application generates Bingo 90 tickets in strips of six tickets. A full str
 
 ### Prerequisites
 
-- Java 11+
+- Java 21
 - Maven
 
 ### Build and Run
